@@ -1,0 +1,189 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(glowing-neon-led-lights-blue-red-color_1017-25199.avif) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.box{
+    width: 430px;
+    height: 520px;
+    background:rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.box form
+{
+    position: absolute;
+    padding: 50px 40px;
+    inset: 4px;
+    background: black;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.box form h1{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.box form .email{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.box form .email input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.box form .email span{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    pointer-events:  none;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;    
+}
+.box form .email input:valid ~ span,
+.box form .email input:focus ~ span
+{
+    color: white;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+.box form .inputbox{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.box form ,.inputbox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.box form .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    pointer-events:  none;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;    
+}
+.box form .inputbox input:valid ~ span,
+.box form .inputbox input:focus ~ span
+{
+    color: white;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+.box form .inputbox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.box form .inputbox input:valid ~ i,
+.box form .inputbox input:focus ~ i
+{
+    height: 44px;
+}
+.box form .email i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.box form .email input:valid ~ i,
+.box form .email input:focus ~ i
+{
+    height: 44px;
+}
+.box form .show{
+    color: white;
+    font-size: 1.3em;
+    padding: 20px 
+    +0px;
+}
+.box form .links{
+    display: flex;
+    justify-content: space-between;
+}
+.box form .links a{
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: whitesmoke;
+    text-decoration: none;
+    margin-top: 40px;
+}
+.box form .links a:hover,
+.box form .links a:nth-child(2)
+{
+    color: white;
+}
+
+.box form .links a:hover{
+    color: rgb(13, 42, 224);
+}
+.box form input[type="submit"]
+{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 18px;
+    font-weight: bold;
+}
+.box form input[type="submit"]:active
+{ opacity: 0,8;}
+.box form input[type="submit"]:hover{
+    color: cyan;
+}

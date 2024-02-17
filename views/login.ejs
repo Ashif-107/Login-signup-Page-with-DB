@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form </title>
+    <script src="login functions.js"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="box">
+        <form action="/login" method="post">
+        <h1>Log In</h1>
+        <div class="inputbox">
+            <input type="text" required="required" name="username">
+            <span>USERNAME</span>
+            <i></i>
+        </div>
+        <div class="inputbox">
+            <input type="password" required="required" id="myInput" name="password">
+            <span>PASSWORD</span>
+            <i></i>
+        </div>
+        <div class="show"><input type="checkbox" onclick="myFunction()">Show Password</div>
+        <div class="links">
+            <a href="/forgotpassword">Forget Password</a>
+            <a href="/signup">Dont have a account?</a>
+            <i></i>
+        </div>
+        <input type="submit" value="Login">
+    </form>
+    </div>
+    <script>
+        function myFunction(){
+        var x = document.getElementById("myInput")
+        if (x.type == "password"){
+            x.type = "text";
+        } else{
+            x.type = "password";
+        }
+    }
+    </script>
+</body>
+</html>

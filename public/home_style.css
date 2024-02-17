@@ -1,0 +1,15 @@
+body{
+    background: url('/images/geometric-shapes-neon-lights-background_23-2148433476\ \(1\).jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1{
+    color: wheat;
+    font-size: 5rem;
+}
+
