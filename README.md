@@ -1,5 +1,27 @@
-<h1>A login or signup page where users name, passwords and emails can be stored in a Database.</h1>
-<h1>Here I have used MongoDB for the database connection and express.js</h1>
+# Node.js Express MongoDB Authentication
 
+This project is a simple implementation of a login/signup page using Node.js, Express.js, and MongoDB. It allows users to create accounts, log in, and stores user information in a MongoDB database.
 
-<h2>Actually it is the first backend project for me using node.js and express.js</h2>
+## Features
+
+- User registration with name, email, and password
+- Secure password storage using bcrypt
+- User login with email and password
+- MongoDB used for database storage
+- Express.js for handling server-side logic
+- Server-side templating for dynamic views
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your machine:
+
+- Node.js: [Download Node.js](https://nodejs.org/)
+- MongoDB: [Download MongoDB](https://www.mongodb.com/try/download/community)
+
+## Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Ashif-107/Login-signup-Page-with-DB.git
+cd your-repo
